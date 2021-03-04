@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="./styles.css">
+        <script src="./randomColorFinder.js"></script>
+    </head>
+
+
+
+    <body id="body">
+        </div>
+        <div class="box-container">
+            <div class="text-wrapper">
+                <h4 id="code">#A52A2A</h4>
+            </div>
+            <div class="button-wrapper">
+                <a id="btn" href="#" onclick="colorFunction()" >Change</a>
+            </div>
+        </div>
+
+
+
+        <script>
+            function colorFunction(){
+                let colorString = "ABCDEF123456";
+                let colorArr = colorString.split("");
+                //console.log(colorArr);
+                let finalArr = [];
+                let i=0;
+                while (i<6){
+                    let n = Math.floor(Math.random()*12);
+                    //console.log(n);
+                    finalArr.push(colorArr[n]);
+                    
+                    i++;
+                }
+                let c = finalArr.join("");
+                let color = "#" + c;
+                //console.log(c);
+                document.getElementById("body").style.background = color;
+                document.getElementById("code").innerHTML = color;
+            }
+        </script>
+
+
+
+    </body>
+</html>

@@ -1,0 +1,50 @@
+
+#body{
+    background:brown;
+    transition: 900ms;
+}
+.box-container{
+    position: relative;
+    background: inherit;
+    position: absolute;
+    top: 30%;
+    left:40%;
+    width: 350px;
+    height: 250px;
+    text-align: center;
+                
+}
+.button-wrapper{
+    position: absolute;
+    top: 50%;
+    text-align: center;
+    left: 30%;
+                
+}
+.button-wrapper a{
+    text-decoration: none;
+    font-size: large;
+    margin: 5px;
+    text-align: center;
+    color: beige;
+    padding: 5px;
+    font-size: large;
+    border: 1px solid transparent;
+    transition: 250ms;
+                
+}
+.button-wrapper a:hover{
+    border: 1px solid beige;
+    font-size: larger;
+}
+.text-wrapper{
+    position: absolute;
+    top: 10px;
+    left: 32%;
+    color: beige;
+    text-align: center;
+}
+#code{
+    font-family: monospace;
+    font-size: 16px;
+}
